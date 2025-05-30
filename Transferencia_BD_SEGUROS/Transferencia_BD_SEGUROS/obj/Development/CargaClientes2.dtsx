@@ -1,0 +1,971 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/25/2025 11:00:35 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-62M3KIP"
+  DTS:CreatorName="DESKTOP-62M3KIP\USUARIO"
+  DTS:Description="SSIS Package Description"
+  DTS:DTSID="{4FB0E084-CE8B-4EA4-833A-7103E5266710}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5467.0"
+  DTS:LocaleID="14346"
+  DTS:MaxErrorCount="0"
+  DTS:ObjectName="CargaClientes2"
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{BF058754-6C2E-41A8-96CB-E02B4D0EADDD}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{CFD6F1AE-88CF-454E-A2EF-E15C60DF63ED}"
+      DTS:ObjectName="DestinationConnectionOLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-62M3KIP\SQLEXPRESS;Initial Catalog=BD_SEGUROS;Provider=SQLOLEDB;Integrated Security=SSPI;Auto Translate=false;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SourceConnectionFlatFile]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{4FB736E4-D89C-4460-AF02-CE2C93898A42}"
+      DTS:ObjectName="SourceConnectionFlatFile">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="14346"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\MARZO 2025\CURSOS\Inteligencia de Negocios\Proyecto IDN\DATA\Transferencia Mesual\BD_CLIENTE_201012.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CODIGO"
+              DTS:DTSID="{195B212D-F15C-4B72-ACCD-70C1DAC6B9D7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AGENCIA"
+              DTS:DTSID="{7D1CCE23-8294-4612-88FA-0758F0FEB10B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SEGMENTO"
+              DTS:DTSID="{980CF3F1-0E0A-42C5-8343-459A4B16ADB0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MES_CORTE"
+              DTS:DTSID="{C723B5D7-6C49-458C-93E4-5CD806637826}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SEXO"
+              DTS:DTSID="{E07D5382-0F77-49F0-9491-27A3ACD62203}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EDAD"
+              DTS:DTSID="{382E294C-37D5-4337-8E19-D7A85643C47E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UBIGEO"
+              DTS:DTSID="{4A905180-8751-4579-8117-FF06237F17D7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="INGRESO"
+              DTS:DTSID="{E2481582-F688-438A-A10D-4BF95C5F5AB7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SITUACION"
+              DTS:DTSID="{A4B419E6-A4C4-426F-898F-C0F0D8BC7FE8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA_ALTA"
+              DTS:DTSID="{DFFCDAD7-C92B-4CCF-85A0-421D593D925A}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task 1"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:DTSID="{A95CFFB7-A537-4E86-A6BD-FBBCC5C7F4D6}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:FailPackageOnFailure="True"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task 1"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          defaultBufferSize="3145728"
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task 1\Data Conversion 0 - 0"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion 0 - 0"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Data Conversion 0 - 0.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 0 - 0.Inputs[Data Conversion Input].Columns[SEGMENTO]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SEGMENTO"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[SEGMENTO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 0 - 0.Inputs[Data Conversion Input].Columns[EDAD]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="EDAD"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[EDAD]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 0 - 0.Inputs[Data Conversion Input].Columns[INGRESO]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="INGRESO"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[INGRESO]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Data Conversion 0 - 0.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Data Flow Task 1\Data Conversion 0 - 0.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 0 - 0.Outputs[Data Conversion Output].Columns[SEGMENTO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 0 - 0.Outputs[Data Conversion Output].Columns[SEGMENTO]"
+                      name="SEGMENTO"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[SEGMENTO]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 0 - 0.Outputs[Data Conversion Output].Columns[EDAD]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 0 - 0.Outputs[Data Conversion Output].Columns[EDAD]"
+                      name="EDAD"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[EDAD]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 0 - 0.Outputs[Data Conversion Output].Columns[INGRESO]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 0 - 0.Outputs[Data Conversion Output].Columns[INGRESO]"
+                      name="INGRESO"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[INGRESO]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\Data Conversion 0 - 0.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Data Flow Task 1\Data Conversion 0 - 0.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 0 - 0.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 0 - 0.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 0 - 0.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 0 - 0.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\Destination - BD_CLIENTE"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Destination - BD_CLIENTE"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[BD_CLIENTE]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].Columns[CODIGO]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CODIGO"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].ExternalColumns[CODIGO]"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[CODIGO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].Columns[AGENCIA]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="AGENCIA"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].ExternalColumns[AGENCIA]"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[AGENCIA]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].Columns[SEGMENTO]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="SEGMENTO"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].ExternalColumns[SEGMENTO]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 0 - 0.Outputs[Data Conversion Output].Columns[SEGMENTO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].Columns[MES_CORTE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MES_CORTE"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].ExternalColumns[MES_CORTE]"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[MES_CORTE]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].Columns[SEXO]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SEXO"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].ExternalColumns[SEXO]"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[SEXO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].Columns[EDAD]"
+                      cachedDataType="i4"
+                      cachedName="EDAD"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].ExternalColumns[EDAD]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 0 - 0.Outputs[Data Conversion Output].Columns[EDAD]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].Columns[UBIGEO]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="UBIGEO"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].ExternalColumns[UBIGEO]"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[UBIGEO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].Columns[INGRESO]"
+                      cachedDataType="r8"
+                      cachedName="INGRESO"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].ExternalColumns[INGRESO]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 0 - 0.Outputs[Data Conversion Output].Columns[INGRESO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].Columns[SITUACION]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SITUACION"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].ExternalColumns[SITUACION]"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[SITUACION]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].Columns[FECHA_ALTA]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="FECHA_ALTA"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].ExternalColumns[FECHA_ALTA]"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[FECHA_ALTA]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].ExternalColumns[CODIGO]"
+                      codePage="1252"
+                      dataType="str"
+                      length="257"
+                      name="CODIGO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].ExternalColumns[AGENCIA]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="AGENCIA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].ExternalColumns[SEGMENTO]"
+                      dataType="wstr"
+                      length="255"
+                      name="SEGMENTO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].ExternalColumns[MES_CORTE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="MES_CORTE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].ExternalColumns[SEXO]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="SEXO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].ExternalColumns[EDAD]"
+                      dataType="i4"
+                      name="EDAD" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].ExternalColumns[UBIGEO]"
+                      codePage="1252"
+                      dataType="str"
+                      length="7"
+                      name="UBIGEO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].ExternalColumns[INGRESO]"
+                      dataType="r8"
+                      name="INGRESO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].ExternalColumns[SITUACION]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      name="SITUACION" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input].ExternalColumns[FECHA_ALTA]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="FECHA_ALTA" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="14346"
+              name="Source - BD_CLIENTE_201012_csv"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SourceConnectionFlatFile]"
+                  connectionManagerRefId="Package.ConnectionManagers[SourceConnectionFlatFile]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[CODIGO]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].ExternalColumns[CODIGO]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[CODIGO]"
+                      name="CODIGO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[AGENCIA]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].ExternalColumns[AGENCIA]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[AGENCIA]"
+                      name="AGENCIA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[SEGMENTO]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].ExternalColumns[SEGMENTO]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[SEGMENTO]"
+                      name="SEGMENTO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[MES_CORTE]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].ExternalColumns[MES_CORTE]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[MES_CORTE]"
+                      name="MES_CORTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[SEXO]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].ExternalColumns[SEXO]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[SEXO]"
+                      name="SEXO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[EDAD]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].ExternalColumns[EDAD]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[EDAD]"
+                      name="EDAD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[UBIGEO]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].ExternalColumns[UBIGEO]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[UBIGEO]"
+                      name="UBIGEO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[INGRESO]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].ExternalColumns[INGRESO]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[INGRESO]"
+                      name="INGRESO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[SITUACION]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].ExternalColumns[SITUACION]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[SITUACION]"
+                      name="SITUACION"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[FECHA_ALTA]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].ExternalColumns[FECHA_ALTA]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].Columns[FECHA_ALTA]"
+                      name="FECHA_ALTA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].ExternalColumns[CODIGO]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CODIGO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].ExternalColumns[AGENCIA]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="AGENCIA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].ExternalColumns[SEGMENTO]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="SEGMENTO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].ExternalColumns[MES_CORTE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MES_CORTE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].ExternalColumns[SEXO]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="SEXO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].ExternalColumns[EDAD]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="EDAD" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].ExternalColumns[UBIGEO]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="UBIGEO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].ExternalColumns[INGRESO]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="INGRESO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].ExternalColumns[SITUACION]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="SITUACION" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output].ExternalColumns[FECHA_ALTA]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="FECHA_ALTA" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task 1.Paths[Data Conversion Output]"
+              endId="Package\Data Flow Task 1\Destination - BD_CLIENTE.Inputs[Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\Data Flow Task 1\Data Conversion 0 - 0.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Data Flow Task 1.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Task 1\Data Conversion 0 - 0.Inputs[Data Conversion Input]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Data Flow Task 1"
+          TopLeft="492.5,73.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task 1">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="203,42"
+          Id="Package\Data Flow Task 1\Destination - BD_CLIENTE"
+          TopLeft="447,297.5" />
+        <NodeLayout
+          Size="182,42"
+          Id="Package\Data Flow Task 1\Data Conversion 0 - 0"
+          TopLeft="457.5,195.5" />
+        <NodeLayout
+          Size="244,42"
+          Id="Package\Data Flow Task 1\Source - BD_CLIENTE_201012_csv"
+          TopLeft="426.5,93.5" />
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Flat File Source Output]"
+          TopLeft="548.5,135.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Data Conversion Output]"
+          TopLeft="548.5,237.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
