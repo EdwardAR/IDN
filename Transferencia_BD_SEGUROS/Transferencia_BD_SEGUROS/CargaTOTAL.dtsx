@@ -11,8 +11,8 @@
   DTS:LocaleID="14346"
   DTS:ObjectName="CargaTOTAL"
   DTS:PackageType="5"
-  DTS:VersionBuild="40"
-  DTS:VersionGUID="{54AABF97-47EF-4040-B71A-5A718B99FF60}">
+  DTS:VersionBuild="43"
+  DTS:VersionGUID="{FE9191AF-B495-464A-B038-D5CD33D5DD50}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -249,15 +249,15 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[EdwardAR.BD_SEGUROS.sa]"
+      DTS:refId="Package.ConnectionManagers[EdwardAR.BD_SEGUROS]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{49A6084F-26CE-46BF-8EF1-B55953DDA8E7}"
-      DTS:ObjectName="EdwardAR.BD_SEGUROS.sa">
+      DTS:DTSID="{2F32C7AA-75D9-488C-A969-9115D8BF3986}"
+      DTS:ObjectName="EdwardAR.BD_SEGUROS">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=EdwardAR;User ID=sa;Initial Catalog=BD_SEGUROS;Provider=SQLOLEDB.1;Application Name=SSIS-CargaTOTAL-{49A6084F-26CE-46BF-8EF1-B55953DDA8E7}EdwardAR.BD_SEGUROS.sa;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=EdwardAR;Initial Catalog=BD_SEGUROS;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-CargaTOTAL-{2F32C7AA-75D9-488C-A969-9115D8BF3986}EdwardAR.BD_SEGUROS;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -1628,8 +1628,8 @@
               <connections>
                 <connection
                   refId="Package\CARGA BD_CLIENTE\Destination - BD_CLIENTE.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-62M3KIP\SQLEXPRESS.BD_SEGUROS]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-62M3KIP\SQLEXPRESS.BD_SEGUROS]"
+                  connectionManagerID="Package.ConnectionManagers[EdwardAR.BD_SEGUROS]"
+                  connectionManagerRefId="Package.ConnectionManagers[EdwardAR.BD_SEGUROS]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1861,8 +1861,8 @@
               <connections>
                 <connection
                   refId="Package\CARGA BD_CLIENTE\Destination - BD_CLIENTE 1.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-62M3KIP\SQLEXPRESS.BD_SEGUROS]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-62M3KIP\SQLEXPRESS.BD_SEGUROS]"
+                  connectionManagerID="Package.ConnectionManagers[EdwardAR.BD_SEGUROS]"
+                  connectionManagerRefId="Package.ConnectionManagers[EdwardAR.BD_SEGUROS]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2040,7 +2040,7 @@
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
-              localeId="14346"
+              localeId="3082"
               name="Source - BD_CLIENTE_201011_csv"
               usesDispositions="true"
               version="1">
@@ -2057,8 +2057,8 @@
               <connections>
                 <connection
                   refId="Package\CARGA BD_CLIENTE\Source - BD_CLIENTE_201011_csv.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[CLIENTE_201011.csv]"
-                  connectionManagerRefId="Package.ConnectionManagers[CLIENTE_201011.csv]"
+                  connectionManagerID="Package.ConnectionManagers[\BD_CLIENTE_201011.csv]"
+                  connectionManagerRefId="Package.ConnectionManagers[\BD_CLIENTE_201011.csv]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -2385,7 +2385,7 @@
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
-              localeId="14346"
+              localeId="3082"
               name="Source - BD_CLIENTE_201012_csv"
               usesDispositions="true"
               version="1">
@@ -2402,8 +2402,8 @@
               <connections>
                 <connection
                   refId="Package\CARGA BD_CLIENTE\Source - BD_CLIENTE_201012_csv.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[CLIENTE_201012.csv]"
-                  connectionManagerRefId="Package.ConnectionManagers[CLIENTE_201012.csv]"
+                  connectionManagerID="Package.ConnectionManagers[\BD_CLIENTE_201012.csv]"
+                  connectionManagerRefId="Package.ConnectionManagers[\BD_CLIENTE_201012.csv]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -3086,8 +3086,8 @@
               <connections>
                 <connection
                   refId="Package\CARGA BD_TB_SEGURO\Destination - BD_TB_SEGURO.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-62M3KIP\SQLEXPRESS.BD_SEGUROS]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-62M3KIP\SQLEXPRESS.BD_SEGUROS]"
+                  connectionManagerID="Package.ConnectionManagers[EdwardAR.BD_SEGUROS]"
+                  connectionManagerRefId="Package.ConnectionManagers[EdwardAR.BD_SEGUROS]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3317,8 +3317,8 @@
               <connections>
                 <connection
                   refId="Package\CARGA BD_TB_SEGURO\Destination - BD_TB_SEGURO 1.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-62M3KIP\SQLEXPRESS.BD_SEGUROS]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-62M3KIP\SQLEXPRESS.BD_SEGUROS]"
+                  connectionManagerID="Package.ConnectionManagers[EdwardAR.BD_SEGUROS]"
+                  connectionManagerRefId="Package.ConnectionManagers[EdwardAR.BD_SEGUROS]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3494,7 +3494,7 @@
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
-              localeId="14346"
+              localeId="3082"
               name="Source - BD_TB_SEGURO_201011_csv"
               usesDispositions="true"
               version="1">
@@ -3511,8 +3511,8 @@
               <connections>
                 <connection
                   refId="Package\CARGA BD_TB_SEGURO\Source - BD_TB_SEGURO_201011_csv.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[TB_SEGURO_201011.csv]"
-                  connectionManagerRefId="Package.ConnectionManagers[TB_SEGURO_201011.csv]"
+                  connectionManagerID="Package.ConnectionManagers[\BD_TB_SEGURO_201011.csv]"
+                  connectionManagerRefId="Package.ConnectionManagers[\BD_TB_SEGURO_201011.csv]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -3839,7 +3839,7 @@
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
-              localeId="14346"
+              localeId="3082"
               name="Source - BD_TB_SEGURO_201012_csv"
               usesDispositions="true"
               version="1">
@@ -3856,8 +3856,8 @@
               <connections>
                 <connection
                   refId="Package\CARGA BD_TB_SEGURO\Source - BD_TB_SEGURO_201012_csv.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[TB_SEGURO_201012.csv]"
-                  connectionManagerRefId="Package.ConnectionManagers[TB_SEGURO_201012.csv]"
+                  connectionManagerID="Package.ConnectionManagers[\BD_TB_SEGURO_201012.csv]"
+                  connectionManagerRefId="Package.ConnectionManagers[\BD_TB_SEGURO_201012.csv]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -4278,8 +4278,8 @@
               <connections>
                 <connection
                   refId="Package\CARGA TB_PRODUCTOS_FINANCIEROS\Destination - TB_PRODUCTOS_FINANCIEROS.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-62M3KIP\SQLEXPRESS.BD_SEGUROS]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-62M3KIP\SQLEXPRESS.BD_SEGUROS]"
+                  connectionManagerID="Package.ConnectionManagers[EdwardAR.BD_SEGUROS]"
+                  connectionManagerRefId="Package.ConnectionManagers[EdwardAR.BD_SEGUROS]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4493,8 +4493,8 @@
               <connections>
                 <connection
                   refId="Package\CARGA TB_PRODUCTOS_FINANCIEROS\Destination - TB_PRODUCTOS_FINANCIEROS 1.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-62M3KIP\SQLEXPRESS.BD_SEGUROS]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-62M3KIP\SQLEXPRESS.BD_SEGUROS]"
+                  connectionManagerID="Package.ConnectionManagers[EdwardAR.BD_SEGUROS]"
+                  connectionManagerRefId="Package.ConnectionManagers[EdwardAR.BD_SEGUROS]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4654,7 +4654,7 @@
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
-              localeId="14346"
+              localeId="3082"
               name="Source - TB_PRODUCTOS_FINANCIEROS_201011_csv"
               usesDispositions="true"
               version="1">
@@ -4671,8 +4671,8 @@
               <connections>
                 <connection
                   refId="Package\CARGA TB_PRODUCTOS_FINANCIEROS\Source - TB_PRODUCTOS_FINANCIEROS_201011_csv.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[TB_PRODUCTOS_FINANCIEROS_201011.csv]"
-                  connectionManagerRefId="Package.ConnectionManagers[TB_PRODUCTOS_FINANCIEROS_201011.csv]"
+                  connectionManagerID="Package.ConnectionManagers[\TB_PRODUCTOS_FINANCIEROS_201011.csv]"
+                  connectionManagerRefId="Package.ConnectionManagers[\TB_PRODUCTOS_FINANCIEROS_201011.csv]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -4943,7 +4943,7 @@
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
-              localeId="14346"
+              localeId="3082"
               name="Source - TB_PRODUCTOS_FINANCIEROS_201012_csv"
               usesDispositions="true"
               version="1">
@@ -4960,8 +4960,8 @@
               <connections>
                 <connection
                   refId="Package\CARGA TB_PRODUCTOS_FINANCIEROS\Source - TB_PRODUCTOS_FINANCIEROS_201012_csv.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[TB_PRODUCTOS_FINANCIEROS_201012.csv]"
-                  connectionManagerRefId="Package.ConnectionManagers[TB_PRODUCTOS_FINANCIEROS_201012.csv]"
+                  connectionManagerID="Package.ConnectionManagers[\TB_PRODUCTOS_FINANCIEROS_201012.csv]"
+                  connectionManagerRefId="Package.ConnectionManagers[\TB_PRODUCTOS_FINANCIEROS_201012.csv]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -5017,7 +5017,7 @@
                       refId="Package\CARGA TB_PRODUCTOS_FINANCIEROS\Source - TB_PRODUCTOS_FINANCIEROS_201012_csv.Outputs[Flat File Source Output].Columns[FLGVIP]"
                       codePage="1252"
                       dataType="str"
-                      errorOrTruncationOperation="Conversion"
+                      errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\CARGA TB_PRODUCTOS_FINANCIEROS\Source - TB_PRODUCTOS_FINANCIEROS_201012_csv.Outputs[Flat File Source Output].ExternalColumns[FLGVIP]"
                       length="50"
@@ -5027,11 +5027,11 @@
                       <properties>
                         <property
                           dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
                           name="FastParse">false</property>
                         <property
                           dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
+                          description="Indica si los datos están en formato binario."
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
@@ -5039,7 +5039,7 @@
                       refId="Package\CARGA TB_PRODUCTOS_FINANCIEROS\Source - TB_PRODUCTOS_FINANCIEROS_201012_csv.Outputs[Flat File Source Output].Columns[FLGVPH]"
                       codePage="1252"
                       dataType="str"
-                      errorOrTruncationOperation="Conversion"
+                      errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\CARGA TB_PRODUCTOS_FINANCIEROS\Source - TB_PRODUCTOS_FINANCIEROS_201012_csv.Outputs[Flat File Source Output].ExternalColumns[FLGVPH]"
                       length="50"
@@ -5049,11 +5049,11 @@
                       <properties>
                         <property
                           dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
                           name="FastParse">false</property>
                         <property
                           dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
+                          description="Indica si los datos están en formato binario."
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
@@ -5061,7 +5061,7 @@
                       refId="Package\CARGA TB_PRODUCTOS_FINANCIEROS\Source - TB_PRODUCTOS_FINANCIEROS_201012_csv.Outputs[Flat File Source Output].Columns[FLGTC]"
                       codePage="1252"
                       dataType="str"
-                      errorOrTruncationOperation="Conversion"
+                      errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\CARGA TB_PRODUCTOS_FINANCIEROS\Source - TB_PRODUCTOS_FINANCIEROS_201012_csv.Outputs[Flat File Source Output].ExternalColumns[FLGTC]"
                       length="50"
@@ -5071,11 +5071,11 @@
                       <properties>
                         <property
                           dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
                           name="FastParse">false</property>
                         <property
                           dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
+                          description="Indica si los datos están en formato binario."
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
@@ -5083,7 +5083,7 @@
                       refId="Package\CARGA TB_PRODUCTOS_FINANCIEROS\Source - TB_PRODUCTOS_FINANCIEROS_201012_csv.Outputs[Flat File Source Output].Columns[FLGAHO]"
                       codePage="1252"
                       dataType="str"
-                      errorOrTruncationOperation="Conversion"
+                      errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\CARGA TB_PRODUCTOS_FINANCIEROS\Source - TB_PRODUCTOS_FINANCIEROS_201012_csv.Outputs[Flat File Source Output].ExternalColumns[FLGAHO]"
                       length="50"
@@ -5093,11 +5093,11 @@
                       <properties>
                         <property
                           dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
                           name="FastParse">false</property>
                         <property
                           dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
+                          description="Indica si los datos están en formato binario."
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
@@ -5105,7 +5105,7 @@
                       refId="Package\CARGA TB_PRODUCTOS_FINANCIEROS\Source - TB_PRODUCTOS_FINANCIEROS_201012_csv.Outputs[Flat File Source Output].Columns[FLGSEG]"
                       codePage="1252"
                       dataType="str"
-                      errorOrTruncationOperation="Conversion"
+                      errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\CARGA TB_PRODUCTOS_FINANCIEROS\Source - TB_PRODUCTOS_FINANCIEROS_201012_csv.Outputs[Flat File Source Output].ExternalColumns[FLGSEG]"
                       length="50"
@@ -5115,11 +5115,11 @@
                       <properties>
                         <property
                           dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
                           name="FastParse">false</property>
                         <property
                           dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
+                          description="Indica si los datos están en formato binario."
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
@@ -5127,7 +5127,7 @@
                       refId="Package\CARGA TB_PRODUCTOS_FINANCIEROS\Source - TB_PRODUCTOS_FINANCIEROS_201012_csv.Outputs[Flat File Source Output].Columns[FLGSBS]"
                       codePage="1252"
                       dataType="str"
-                      errorOrTruncationOperation="Conversion"
+                      errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\CARGA TB_PRODUCTOS_FINANCIEROS\Source - TB_PRODUCTOS_FINANCIEROS_201012_csv.Outputs[Flat File Source Output].ExternalColumns[FLGSBS]"
                       length="50"
@@ -5137,11 +5137,11 @@
                       <properties>
                         <property
                           dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
                           name="FastParse">false</property>
                         <property
                           dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
+                          description="Indica si los datos están en formato binario."
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
@@ -5266,7 +5266,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{6FF4CAAF-A99C-44D2-A434-CAC232A6F3D4}"
+              SQLTask:Connection="{2F32C7AA-75D9-488C-A969-9115D8BF3986}"
               SQLTask:SqlStatementSource="--INSERTAR EL REGISTRO SIN ESPECIFICAR TABLA BD SEGMENTO &#xA;INSERT INTO [dbo].[BD_SEGMENTO] (COD_SEGMENTO, DESC_SEGMENTO, GRUPO)&#xA;VALUES ('999999', 'SIN ESPECIFICAR', 'NO DEFINIDO');" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -5283,7 +5283,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{6FF4CAAF-A99C-44D2-A434-CAC232A6F3D4}"
+              SQLTask:Connection="{2F32C7AA-75D9-488C-A969-9115D8BF3986}"
               SQLTask:SqlStatementSource="--CAMBIO DE DATOS SIN ESPECIFICAR A DESCONOCIDO EN LA COLUMMNA &quot;BANCA&quot;&#xA;UPDATE [dbo].[BD_AGENCIAS] SET BANCA = 'DESCONOCIDO' WHERE BANCA = 'SIN ESPECIFICAR';&#xA;&#xA;--CAMBIO DE DATOS SIN ESPECIFICAR A DESCONOCIDO EN LA COLUMMNA &quot;ZONA&quot;&#xA;UPDATE [dbo].[BD_AGENCIAS] SET ZONA = 'DESCONOCIDO' WHERE ZONA = 'SIN ESPECIFICAR';&#xA;&#xA;--CAMBIO DE DATOS SIN ESPECIFICAR A DESCONOCIDO EN LA COLUMMNA &quot;ZONA&quot;&#xA;UPDATE [dbo].[BD_AGENCIAS] SET ZONA = 'DESCONOCIDO' WHERE ZONA IN ('NEGOCIOS', 'EMPRESA', 'MERCADOS', 'INVERSIONES', 'ADMINISTRATIVA', 'CENTRO NEGOCIOS');&#xA;&#xA;--CAMBIO DE DATOS ('ADMINISTRATIVA', 'EMPRESA', 'SIN ESPECIFICAR', 'MERCADOS', 'INVERSIONES', 'NEGOCIOS') A DESCONOCIDO EN LA COLUMMNA &quot;ZONA&quot; DE LOS CAMPOS &#xA;UPDATE [dbo].[BD_AGENCIAS] SET AGENCIA = 'DESCONOCIDO' WHERE AGENCIA IN ('ADMINISTRATIVA', 'EMPRESA', 'SIN ESPECIFICAR', 'MERCADOS', 'INVERSIONES', 'NEGOCIOS');&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -5300,7 +5300,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{6FF4CAAF-A99C-44D2-A434-CAC232A6F3D4}"
+              SQLTask:Connection="{2F32C7AA-75D9-488C-A969-9115D8BF3986}"
               SQLTask:SqlStatementSource="-- Elimina registros de la tabla BD_CLIENTE donde el campo CODIGO está vacío o solo contiene espacios&#xA;DELETE FROM [dbo].[BD_CLIENTE] WHERE LTRIM(RTRIM(CODIGO)) = '';&#xA;&#xA;-- Elimina registros de la tabla BD_CLIENTE donde el campo SEXO tenga valores no válidos ('P' o 'U')&#xA;DELETE FROM [dbo].[BD_CLIENTE] WHERE SEXO IN ('P', 'U');&#xA;&#xA;UPDATE [BD_CLIENTE] SET UBIGEO = '9999999' WHERE UBIGEO IS NULL OR LTRIM(RTRIM(UBIGEO)) = '';&#xA;&#xA;-- Corrige valores de edad inválidos, estableciendo '999' en registros con '-1', NULL o vacíos&#xA;UPDATE dbo.BD_CLIENTE &#xA;SET EDAD = '999' &#xA;WHERE EDAD = '-1' OR EDAD IS NULL OR LTRIM(RTRIM(EDAD)) = '';&#xA;&#xA;--INSERTAR EL REGISTRO SIN ESPECIFICAR TABLA BD SEGMENTO &#xA;INSERT INTO [dbo].[BD_SEGMENTO] (COD_SEGMENTO, DESC_SEGMENTO, GRUPO)&#xA;VALUES ('999999', 'SIN ESPECIFICAR', 'NO DEFINIDO');" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -5317,7 +5317,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{6FF4CAAF-A99C-44D2-A434-CAC232A6F3D4}"
+              SQLTask:Connection="{2F32C7AA-75D9-488C-A969-9115D8BF3986}"
               SQLTask:SqlStatementSource="INSERT INTO [dbo].[BD_SEGMENTO] (COD_SEGMENTO, DESC_SEGMENTO, GRUPO)&#xA;VALUES ('999999', 'SIN ESPECIFICAR', 'NO DEFINIDO');" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -5334,7 +5334,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{6FF4CAAF-A99C-44D2-A434-CAC232A6F3D4}"
+              SQLTask:Connection="{2F32C7AA-75D9-488C-A969-9115D8BF3986}"
               SQLTask:SqlStatementSource="UPDATE [dbo].[BD_TB_SEGURO]&#xA;SET fh_vencimiento = '2015/03/19'&#xA;WHERE &#xA;    fh_vencimiento IS NULL&#xA;    OR fh_vencimiento = ''&#xA;    OR LEN(fh_vencimiento) &lt;&gt; 10&#xA;    OR fh_vencimiento NOT LIKE '[0-3][0-9]/[0-1][0-9]/[0-9][0-9][0-9][0-9]';&#xA;&#xA;&#xA;UPDATE dbo.BD_TB_SEGURO&#xA;SET fh_vencimiento = CONVERT(VARCHAR(10), DATEADD(YEAR, 1, TRY_CAST(fh_apertura AS DATE)), 120)&#xA;WHERE &#xA;    TRY_CAST(fh_apertura AS DATE) IS NOT NULL &#xA;    AND TRY_CAST(fh_vencimiento AS DATE) IS NOT NULL &#xA;    AND TRY_CAST(fh_apertura AS DATE) &gt; TRY_CAST(fh_vencimiento AS DATE);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -5351,7 +5351,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{6FF4CAAF-A99C-44D2-A434-CAC232A6F3D4}"
+              SQLTask:Connection="{2F32C7AA-75D9-488C-A969-9115D8BF3986}"
               SQLTask:SqlStatementSource="-- Reemplaza valores vacíos en la columna 'DISTRITO' por 'DESCONOCIDO' para asegurar consistencia en los datos&#xA;UPDATE [dbo].[BD_UBIGEO] SET DISTRITO = 'DESCONOCIDO' WHERE DISTRITO = '';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -5368,7 +5368,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{6FF4CAAF-A99C-44D2-A434-CAC232A6F3D4}"
+              SQLTask:Connection="{2F32C7AA-75D9-488C-A969-9115D8BF3986}"
               SQLTask:SqlStatementSource="--TB PRODUCTOS FINANCIEROS -- 1495428  -- 61898 SE ELIMINARION 123798 DATOS DUPLICADOS DE OTRA TABLA &#xA;  DELETE FROM [dbo].[TB_PRODUCTOS_FINANCIEROS] WHERE FLGTC IN ('P', 'U');&#xA;"
               SQLTask:TypeConversionMode="None" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -5386,7 +5386,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{6FF4CAAF-A99C-44D2-A434-CAC232A6F3D4}"
+              SQLTask:Connection="{2F32C7AA-75D9-488C-A969-9115D8BF3986}"
               SQLTask:SqlStatementSource="UPDATE [BD_CLIENTE] SET UBIGEO = '9999999'&#xA;&#xA;&#xA;&#xA;UPDATE [BD_CLIENTE] SET UBIGEO = '9999999' WHERE UBIGEO IS NULL OR LTRIM(RTRIM(UBIGEO)) = '';&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -5463,7 +5463,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{6FF4CAAF-A99C-44D2-A434-CAC232A6F3D4}"
+          SQLTask:Connection="{2F32C7AA-75D9-488C-A969-9115D8BF3986}"
           SQLTask:SqlStatementSource="-- Elimina registros de la tabla BD_CLIENTE donde MES_CORTE es 02, 01, 03 o ''&#xA;DELETE FROM [dbo].[BD_CLIENTE] WHERE MES_CORTE IN ('02', '01', '03') OR MES_CORTE = '';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -5480,7 +5480,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{6FF4CAAF-A99C-44D2-A434-CAC232A6F3D4}"
+          SQLTask:Connection="{2F32C7AA-75D9-488C-A969-9115D8BF3986}"
           SQLTask:SqlStatementSource="-- Elimina registros de la tabla BD_CLIENTE donde MES_CORTE es 201011, 201012, 02, 01, 03 o ''&#xA;DELETE FROM [dbo].[BD_CLIENTE] WHERE MES_CORTE IN ('201011', '201012', '02', '01', '03') OR MES_CORTE = '';&#xA;&#xA;-- Elimina registros de la tabla BD_TB_SEGURO donde MES_CORTE es 201011 o 201012&#xA;DELETE FROM [dbo].[BD_TB_SEGURO] WHERE MES_CORTE IN (201011, 201012);&#xA;&#xA;-- Elimina registros de la tabla TB_PRODUCTOS_FINANCIEROS donde MES_CORTE es 201011 o 201012&#xA;DELETE FROM [dbo].[TB_PRODUCTOS_FINANCIEROS]&#xA;WHERE MES_CORTE IN (201011, 201012);&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -5556,71 +5556,75 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="176,42"
+          Size="176,41.6"
           Id="Package\CARGA BD_CLIENTE"
           TopLeft="85,120" />
         <NodeLayout
-          Size="193,42"
+          Size="192.8,41.6"
           Id="Package\CARGA BD_TB_SEGURO"
           TopLeft="426.5,122.5" />
         <NodeLayout
-          Size="266,42"
+          Size="265.6,41.6"
           Id="Package\CARGA TB_PRODUCTOS_FINANCIEROS"
           TopLeft="754.5,123.5" />
         <NodeLayout
-          Size="170,42"
+          Size="169.6,41.6"
           Id="Package\CREACIÓN DE ETL\ACTUALIZACION DE DATOS"
           TopLeft="623.019054816207,44.1529468426933" />
         <NodeLayout
-          Size="183,50"
+          Size="183.2,49.6"
           Id="Package\CREACIÓN DE ETL\ACTUALIZACIÓN DE DATOS BD_AGENCIA"
           TopLeft="24,14" />
         <NodeLayout
-          Size="170,52"
+          Size="169.6,52"
           Id="Package\CREACIÓN DE ETL\ACTUALIZACIÓN DE DATOS BD_CLIENTE"
           TopLeft="31,94" />
         <NodeLayout
-          Size="172,51"
+          Size="172,51.2"
           Id="Package\CREACIÓN DE ETL\ACTUALIZACIÓN DE DATOS BD_SEGMENTO"
           TopLeft="32,187" />
         <NodeLayout
-          Size="191,49"
+          Size="191.2,48.8"
           Id="Package\CREACIÓN DE ETL\ACTUALIZACIÓN DE DATOS BD_TB_SEGURO"
           TopLeft="26,273" />
         <NodeLayout
-          Size="172,49"
+          Size="172,48.8"
           Id="Package\CREACIÓN DE ETL\ACTUALIZACIÓN DE DATOS BD_UBIGEO"
           TopLeft="38.555555555555,345.555555555555" />
         <NodeLayout
-          Size="178,42"
+          Size="238.4,64"
+          Id="Package\CREACIÓN DE ETL\ACTUALIZACIÓN DE DATOS TB_PRODUCTOS_FINANCIEROS"
+          TopLeft="21.761904928149,429.470588396165" />
+        <NodeLayout
+          Size="177.6,41.6"
           Id="Package\CREACIÓN DE ETL\CREACION DE VISTA"
-          TopLeft="356.318369406166,33.7747935700289" />
+          TopLeft="356.318369406166,35.3042053561844" />
         <EdgeLayout
           Id="Package\CREACIÓN DE ETL.PrecedenceConstraints[Restricción]"
-          TopLeft="534.318369406166,54.7747935700289">
+          TopLeft="533.918369406166,56.1042053561844">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="88.7006854100406,10.3781532726643"
+              EndConnector="89.1006854100409,8.84874148650894"
               Start="0,0"
-              End="81.2006854100406,10.3781532726643">
+              End="81.6006854100409,8.84874148650894">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="40.3503427050203,0" />
+                    End="40.5503427050205,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="40.3503427050203,0"
-                    Point2="44.3503427050203,0"
-                    Point3="44.3503427050203,4" />
+                    Point1="40.5503427050205,0"
+                    Point2="44.5503427050205,0"
+                    Point3="44.5503427050205,4" />
                   <mssgle:LineSegment
-                    End="44.3503427050203,6.37815327266435" />
+                    End="44.5503427050205,4.84874148650894" />
                   <mssgle:CubicBezierSegment
-                    Point1="44.3503427050203,6.37815327266435"
-                    Point2="44.3503427050203,10.3781532726643"
-                    Point3="48.3503427050203,10.3781532726643" />
+                    Point1="44.5503427050205,4.84874148650894"
+                    Point2="44.5503427050205,8.84874148650894"
+                    Point3="48.5503427050205,8.84874148650894" />
                   <mssgle:LineSegment
-                    End="81.2006854100406,10.3781532726643" />
+                    End="81.6006854100409,8.84874148650894" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5696,6 +5700,40 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\CREACIÓN DE ETL.PrecedenceConstraints[Restricción 4]"
+          TopLeft="124.555555555555,394.355555555555">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-21.993650627406,35.1150328406097"
+              Start="0,0"
+              End="-21.993650627406,27.6150328406097">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.9285595730034" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.9285595730034"
+                    Point2="0,20.9285595730034"
+                    Point3="-4,20.9285595730034" />
+                  <mssgle:LineSegment
+                    End="-17.993650627406,20.9285595730034" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-17.993650627406,20.9285595730034"
+                    Point2="-21.993650627406,20.9285595730034"
+                    Point3="-21.993650627406,24.9285595730034" />
+                  <mssgle:LineSegment
+                    End="-21.993650627406,27.6150328406097" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\CREACIÓN DE ETL.PrecedenceConstraints[Restricción 5]"
           TopLeft="123.027777777777,322">
           <EdgeLayout.Curve>
@@ -5717,58 +5755,32 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="238,64"
-          Id="Package\CREACIÓN DE ETL\ACTUALIZACIÓN DE DATOS TB_PRODUCTOS_FINANCIEROS"
-          TopLeft="12,418" />
-        <EdgeLayout
-          Id="Package\CREACIÓN DE ETL.PrecedenceConstraints[Restricción 4]"
-          TopLeft="127.777777777777,394.555555555555">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,23.444444444445"
-              Start="0,0"
-              End="0,15.944444444445">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,15.944444444445" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\CREACIÓN DE ETL.PrecedenceConstraints[Restricción 6]"
-          TopLeft="169.333333333333,418">
+          TopLeft="179.361904928149,429.470588396165">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="275.985036072833,-342.225206429971"
+              EndConnector="265.756464478017,-352.56638303998"
               Start="0,0"
-              End="275.985036072833,-334.725206429971">
+              End="265.756464478017,-345.06638303998">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-10.261268707935" />
+                    End="0,-15.2342026411969" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-10.261268707935"
-                    Point2="0,-14.261268707935"
-                    Point3="4,-14.261268707935" />
+                    Point1="0,-15.2342026411969"
+                    Point2="0,-19.2342026411969"
+                    Point3="4,-19.2342026411969" />
                   <mssgle:LineSegment
-                    End="271.985036072833,-14.261268707935" />
+                    End="261.756464478017,-19.2342026411969" />
                   <mssgle:CubicBezierSegment
-                    Point1="271.985036072833,-14.261268707935"
-                    Point2="275.985036072833,-14.261268707935"
-                    Point3="275.985036072833,-18.261268707935" />
+                    Point1="261.756464478017,-19.2342026411969"
+                    Point2="265.756464478017,-19.2342026411969"
+                    Point3="265.756464478017,-23.2342026411969" />
                   <mssgle:LineSegment
-                    End="275.985036072833,-334.725206429971" />
+                    End="265.756464478017,-345.06638303998" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5780,16 +5792,16 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="931,613"
-          Size="931,656"
+          PanelSize="931.2,612.8"
+          Size="931.2,656"
           Id="Package\CREACIÓN DE ETL"
-          TopLeft="100.888888888889,284" />
+          TopLeft="115.174603417887,293.176470716932" />
         <NodeLayout
-          Size="179,61"
+          Size="179.2,60.8"
           Id="Package\ELIMINA DATA DE CLIENTES QUE NO SON PARTE DE MES_CORTE"
           TopLeft="90,194" />
         <NodeLayout
-          Size="245,42"
+          Size="244.8,41.6"
           Id="Package\ELIMINA DATA POSTERIOR A 2010"
           TopLeft="403,21" />
         <EdgeLayout
@@ -5906,30 +5918,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 4]"
-          TopLeft="179.5,255">
+          TopLeft="179.6,254.8">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="156.138888888889,29"
+              EndConnector="170.374603417887,38.3764707169319"
               Start="0,0"
-              End="156.138888888889,21.5">
+              End="170.374603417887,30.8764707169319">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.2781149589432" />
+                    End="0,21.5112575182803" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,15.2781149589432"
-                    Point2="0,19.2781149589432"
-                    Point3="4,19.2781149589432" />
+                    Point1="0,21.5112575182803"
+                    Point2="0,25.5112575182803"
+                    Point3="4,25.5112575182803" />
                   <mssgle:LineSegment
-                    End="152.138888888889,19.2781149589432" />
+                    End="166.374603417887,25.5112575182803" />
                   <mssgle:CubicBezierSegment
-                    Point1="152.138888888889,19.2781149589432"
-                    Point2="156.138888888889,19.2781149589432"
-                    Point3="156.138888888889,23.2781149589432" />
+                    Point1="166.374603417887,25.5112575182803"
+                    Point2="170.374603417887,25.5112575182803"
+                    Point3="170.374603417887,29.5112575182803" />
                   <mssgle:LineSegment
-                    End="156.138888888889,21.5" />
+                    End="170.374603417887,30.8764707169319" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5940,30 +5952,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 5]"
-          TopLeft="523,164.5">
+          TopLeft="522.9,164.1">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="43.388888888889,119.5"
+              EndConnector="57.8746034178874,129.076470716932"
               Start="0,0"
-              End="43.388888888889,112">
+              End="57.8746034178874,121.576470716932">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,55.75" />
+                    End="0,60.538235358466" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,55.75"
-                    Point2="0,59.75"
-                    Point3="4,59.75" />
+                    Point1="0,60.538235358466"
+                    Point2="0,64.538235358466"
+                    Point3="4,64.538235358466" />
                   <mssgle:LineSegment
-                    End="39.388888888889,59.75" />
+                    End="53.8746034178874,64.538235358466" />
                   <mssgle:CubicBezierSegment
-                    Point1="39.388888888889,59.75"
-                    Point2="43.388888888889,59.75"
-                    Point3="43.388888888889,63.75" />
+                    Point1="53.8746034178874,64.538235358466"
+                    Point2="57.8746034178874,64.538235358466"
+                    Point3="57.8746034178874,68.538235358466" />
                   <mssgle:LineSegment
-                    End="43.388888888889,112" />
+                    End="57.8746034178874,121.576470716932" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5974,30 +5986,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 6]"
-          TopLeft="887.5,165.5">
+          TopLeft="887.3,165.1">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-90.361111111111,118.5"
+              EndConnector="-75.7253965821125,128.076470716932"
               Start="0,0"
-              End="-90.361111111111,111">
+              End="-75.7253965821125,120.576470716932">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,74.7743662977508" />
+                    End="0,81.140497952318" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,74.7743662977508"
-                    Point2="0,78.7743662977508"
-                    Point3="-4,78.7743662977508" />
+                    Point1="0,81.140497952318"
+                    Point2="0,85.140497952318"
+                    Point3="-4,85.140497952318" />
                   <mssgle:LineSegment
-                    End="-86.361111111111,78.7743662977508" />
+                    End="-71.7253965821125,85.140497952318" />
                   <mssgle:CubicBezierSegment
-                    Point1="-86.361111111111,78.7743662977508"
-                    Point2="-90.361111111111,78.7743662977508"
-                    Point3="-90.361111111111,82.7743662977508" />
+                    Point1="-71.7253965821125,85.140497952318"
+                    Point2="-75.7253965821125,85.140497952318"
+                    Point3="-75.7253965821125,89.140497952318" />
                   <mssgle:LineSegment
-                    End="-90.361111111111,111" />
+                    End="-75.7253965821125,120.576470716932" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6015,27 +6027,27 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="243,42"
+          Size="243.2,41.6"
           Id="Package\CARGA BD_CLIENTE\Source - BD_CLIENTE_201011_csv"
           TopLeft="186.499998935631,82.4852930585818" />
         <NodeLayout
-          Size="243,42"
+          Size="243.2,41.6"
           Id="Package\CARGA BD_CLIENTE\Source - BD_CLIENTE_201012_csv"
           TopLeft="599.499998935631,81.4852930585818" />
         <NodeLayout
-          Size="203,42"
+          Size="203.2,41.6"
           Id="Package\CARGA BD_CLIENTE\Destination - BD_CLIENTE 1"
           TopLeft="619.999998935631,286.485293058582" />
         <NodeLayout
-          Size="203,42"
+          Size="203.2,41.6"
           Id="Package\CARGA BD_CLIENTE\Destination - BD_CLIENTE"
           TopLeft="207.999998935631,287.485293058582" />
         <NodeLayout
-          Size="182,42"
+          Size="182.4,41.6"
           Id="Package\CARGA BD_CLIENTE\Data Conversion 0 - 0 1"
           TopLeft="630.499998935631,183.485293058582" />
         <NodeLayout
-          Size="182,42"
+          Size="182.4,41.6"
           Id="Package\CARGA BD_CLIENTE\Data Conversion 0 - 0"
           TopLeft="218.499998935631,185.485293058582" />
         <EdgeLayout
@@ -6161,27 +6173,27 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="261,42"
+          Size="260.8,41.6"
           Id="Package\CARGA BD_TB_SEGURO\Source - BD_TB_SEGURO_201011_csv"
-          TopLeft="186,116" />
+          TopLeft="186,117" />
         <NodeLayout
-          Size="261,42"
+          Size="260.8,41.6"
           Id="Package\CARGA BD_TB_SEGURO\Source - BD_TB_SEGURO_201012_csv"
           TopLeft="630,119" />
         <NodeLayout
-          Size="220,42"
+          Size="220,41.6"
           Id="Package\CARGA BD_TB_SEGURO\Destination - BD_TB_SEGURO 1"
           TopLeft="650.5,323" />
         <NodeLayout
-          Size="220,42"
+          Size="220,41.6"
           Id="Package\CARGA BD_TB_SEGURO\Destination - BD_TB_SEGURO"
           TopLeft="206.5,320" />
         <NodeLayout
-          Size="182,42"
+          Size="182.4,41.6"
           Id="Package\CARGA BD_TB_SEGURO\Data Conversion 0 - 0 1"
           TopLeft="669.5,221" />
         <NodeLayout
-          Size="182,42"
+          Size="182.4,41.6"
           Id="Package\CARGA BD_TB_SEGURO\Data Conversion 0 - 0"
           TopLeft="225.5,218" />
         <EdgeLayout
@@ -6208,18 +6220,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\CARGA BD_TB_SEGURO.Paths[Flat File Source Output]"
-          TopLeft="316.5,158">
+          TopLeft="316.55,158.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="0,59.4"
               Start="0,0"
-              End="0,52.5">
+              End="0,51.9">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,51.9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6307,35 +6319,35 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="334,42"
+          Size="334.4,41.6"
           Id="Package\CARGA TB_PRODUCTOS_FINANCIEROS\Source - TB_PRODUCTOS_FINANCIEROS_201011_csv"
           TopLeft="112,74" />
         <NodeLayout
-          Size="334,42"
+          Size="334.4,41.6"
           Id="Package\CARGA TB_PRODUCTOS_FINANCIEROS\Source - TB_PRODUCTOS_FINANCIEROS_201012_csv"
-          TopLeft="554,72" />
+          TopLeft="555,73" />
         <NodeLayout
-          Size="294,42"
+          Size="294.4,41.6"
           Id="Package\CARGA TB_PRODUCTOS_FINANCIEROS\Destination - TB_PRODUCTOS_FINANCIEROS"
           TopLeft="132,176" />
         <NodeLayout
-          Size="294,42"
+          Size="294.4,41.6"
           Id="Package\CARGA TB_PRODUCTOS_FINANCIEROS\Destination - TB_PRODUCTOS_FINANCIEROS 1"
           TopLeft="574,174" />
         <EdgeLayout
           Id="Package\CARGA TB_PRODUCTOS_FINANCIEROS.Paths[Flat File Source Output1]"
-          TopLeft="721,114">
+          TopLeft="721.7,114.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="0,59.4"
               Start="0,0"
-              End="0,52.5">
+              End="0,51.9">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,51.9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

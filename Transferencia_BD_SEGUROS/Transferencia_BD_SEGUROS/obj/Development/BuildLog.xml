@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Transferencia_BD_SEGUROS</Name>
-    <LastWriteTime>2025-05-30T03:50:00.1421384Z</LastWriteTime>
+    <LastWriteTime>2025-05-30T21:53:54.8828219Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -38,7 +38,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>CargaTOTAL.dtsx</Name>
-      <LastWriteTime>2025-05-30T07:12:55.9006411Z</LastWriteTime>
+      <LastWriteTime>2025-05-30T21:58:38.4201609Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

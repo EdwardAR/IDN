@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-62M3KIP</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAwqMzXNfckkWqtTWJTvsEFAAAAAACAAAAAAAQZgAAAAEAACAAAADmxTuN8M2GeLRTznIHIWNsApnwB6efWhnDPDQ8m7VgEgAAAAAOgAAAAAIAACAAAADk9DimUcUDRxib20N0oLMEXOAbu6ZjH7lJUzL+GqJx35AAAACA3+wjhMAdi4rSt46IMHSEzQYZz4K9QnWMpSh9IdkpYsiurbRVvJAYBePYvStyt2BqZxv0c03CwLTMgxhxlgv5KpH9OyVvdc+OFIV8FLJJSBToLV/UWOxebhElCfx/eVCKqY2prh4IkRgdRx7b+/Ksgdvfr7R1kSi0M40kPK9YAJARPHBf7ZfG7tQ3WaMXqo5AAAAANA8jX/GBdKreiy6NmUDZHQJHx5qTMpBNSn7TTIEyJT2/BihNTb7reGFMiWfrrKvqtenL5qJgJsGQRelYdrRr2Q==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAALnQqKfHpXUuRgvkTDtB6XgAAAAACAAAAAAAQZgAAAAEAACAAAABfmN6tY05iaalkFDOBCUZSJ7yslcnWkwD0UEIe3paE4gAAAAAOgAAAAAIAACAAAACOv5GA1UXQFGghSpBOkvgDkwX6ESvpXIag2tyaowySqJAAAADRMCcqkMnPKHfuGmm+Gm/P0kpnHDaMYSR+/zhmIg5Cbovrbn8qULUrWjUPACDu9XSpUzZ69HRaJQb8jOWFPwHDSp8QeNXr2GO5Amx1+mOAb1LtFGY+69fQPFNI2s5krDX5pp7/tlPbMgMaBb00gvAWRe3PIZ9oicfFLfYPZ4nnq3giHZ036qBD1/nFBjvHcqtAAAAA/6QaH0hR4vBau68iC0cslH+Da1X/ipNQn6+IT7i/RopX5ZUIlNFwvChkHkoCoJGKQGtIUtbldFqgnoFzFTFvfQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -2208,10 +2208,10 @@
                 <SSIS:Property SSIS:Name="Name">CargaTOTAL</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">37</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">42</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{66E69F14-3081-4CE1-8176-EF3673507DA3}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{9C38C273-24C3-4D25-BB16-83C83E64432A}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -3562,6 +3562,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -3757,6 +3759,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -3938,7 +3942,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.EdwardAR.BD_SEGUROS.sa.ConnectByProxy">
+                <SSIS:Parameter SSIS:Name="CM.EdwardAR.BD_SEGUROS.ConnectByProxy">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -3953,7 +3957,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.EdwardAR.BD_SEGUROS.sa.ConnectionString">
+                <SSIS:Parameter SSIS:Name="CM.EdwardAR.BD_SEGUROS.ConnectionString">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -3964,11 +3968,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=EdwardAR;User ID=sa;Initial Catalog=BD_SEGUROS;Provider=SQLOLEDB.1;Application Name=SSIS-CargaTOTAL-{49A6084F-26CE-46BF-8EF1-B55953DDA8E7}EdwardAR.BD_SEGUROS.sa;Auto Translate=False;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=EdwardAR;Initial Catalog=BD_SEGUROS;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-CargaTOTAL-{2F32C7AA-75D9-488C-A969-9115D8BF3986}EdwardAR.BD_SEGUROS;Auto Translate=False;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.EdwardAR.BD_SEGUROS.sa.ConnectRetryCount">
+                <SSIS:Parameter SSIS:Name="CM.EdwardAR.BD_SEGUROS.ConnectRetryCount">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -3983,7 +3987,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.EdwardAR.BD_SEGUROS.sa.ConnectRetryInterval">
+                <SSIS:Parameter SSIS:Name="CM.EdwardAR.BD_SEGUROS.ConnectRetryInterval">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -3998,7 +4002,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.EdwardAR.BD_SEGUROS.sa.ConnectUsingManagedIdentity">
+                <SSIS:Parameter SSIS:Name="CM.EdwardAR.BD_SEGUROS.ConnectUsingManagedIdentity">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -4013,7 +4017,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.EdwardAR.BD_SEGUROS.sa.InitialCatalog">
+                <SSIS:Parameter SSIS:Name="CM.EdwardAR.BD_SEGUROS.InitialCatalog">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -4028,7 +4032,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.EdwardAR.BD_SEGUROS.sa.Password">
+                <SSIS:Parameter SSIS:Name="CM.EdwardAR.BD_SEGUROS.Password">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -4042,7 +4046,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.EdwardAR.BD_SEGUROS.sa.RetainSameConnection">
+                <SSIS:Parameter SSIS:Name="CM.EdwardAR.BD_SEGUROS.RetainSameConnection">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -4057,7 +4061,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.EdwardAR.BD_SEGUROS.sa.ServerName">
+                <SSIS:Parameter SSIS:Name="CM.EdwardAR.BD_SEGUROS.ServerName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -4072,7 +4076,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.EdwardAR.BD_SEGUROS.sa.UserName">
+                <SSIS:Parameter SSIS:Name="CM.EdwardAR.BD_SEGUROS.UserName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -4083,7 +4087,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">sa</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -4249,6 +4252,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -4444,6 +4449,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -4639,6 +4646,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -4834,6 +4843,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
